@@ -180,7 +180,9 @@ def ejecutar_pruebas(pruebas):
     if total_fallas > 0:
         for i in range(total_fallas):
             (indice, falla) = fallas[i]
-            print("Prueba #" + str(indice) + ":" + "\t".join(("\n" + str(falla)).splitlines(True)))
+            mensaje_falla = "Prueba #" + str(indice) + ":"
+            mensaje_falla += "\t".join(("\n" + str(falla)).splitlines(True)))
+            print(mensaje_falla)
             if i < total_fallas - 1:
                 print("----------------")
     print("\nPruebas pasadas: " + str(total - total_fallas) + "/" + str(total))
