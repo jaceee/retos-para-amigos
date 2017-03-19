@@ -1,6 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+################################################################################
+#                             Definición del reto                              #
+################################################################################
+# Dada una secuencia de enteros en forma de arreglo, determinar si es posible  #
+# obtener una secuencia estrictamente creciente removiendo no más de un        #
+# elemento del arreglo.                                                        #
+#                                                                              #
+# Fuente: https://codefights.com/arcade/intro/level-2/2mxbGwLzvkTCKAJMG        #
+################################################################################
+
+################################################################################
+#                                Restricciones                                 #
+################################################################################
+# 2 <= len(secuencia) <= 10^5                                                  #
+# -10^5 <= secuencia[i] <= 10^5                                                #
+################################################################################
+
 def es_secuencia_casi_creciente(secuencia):
     # Este ejemplo está aquí solo para demostrar que un algoritmo de orden
     # cuadratico falla con creces la prueba 14. Es imposible recorrer 10 mil
@@ -11,8 +28,12 @@ def es_secuencia_casi_creciente(secuencia):
             pass
     return False
 
+
+
+
 ################################################################################
 #                         Código para probar solución                          #
+#                                 No tocar                                     #
 ################################################################################
 
 from multiprocessing import Process, Value
